@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="997.0" styleClass="fondoNegro" stylesheets="@Style01.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.AccesoAdministradorViewController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="932.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" prefHeight="46.0" prefWidth="774.0" text="Acceso administrador" textFill="#cf2c10">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="640.0" prefWidth="201.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnRegistrarPelicula" onAction="#OnActionBtnRegistrarPelicula" prefHeight="39.0" prefWidth="182.0" text="Registrar película" textFill="WHITE">
+               <font>
+                  <Font size="7.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnRegistrarSala" onAction="#OnActionBtnRegistrarSala" prefHeight="39.0" prefWidth="181.0" text="Registrar sala" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnRegistrarTanda" onAction="#OnActionBtnRegistrarTanda" prefHeight="39.0" prefWidth="180.0" text="Registrar tanda" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnRegistrarAlimento" onAction="#OnActionBtnRegistrarAlimento" prefHeight="39.0" prefWidth="182.0" text="Registrar alimento" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="BtnMantenimientoUsuarios" onAction="#OnActionBtnMantenimientoUsuario" prefHeight="39.0" prefWidth="182.0" text="Usuarios" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnReportes" onAction="#OnActionBtnReportes" prefHeight="39.0" prefWidth="182.0" text="Reportes" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnCerrarSesion" onAction="#OnActionBtnCerrarSesion" prefHeight="39.0" prefWidth="182.0" text="Cerrar sesión" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
