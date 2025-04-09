@@ -1,0 +1,42 @@
+/*ESTILO PARA LOS BOTONES
+---------------------------------------------------------*/
+.EstiloRojo:hover { 
+    -fx-background-color:#670e00;
+}
+.buttonRojo
+{
+    -fx-background-color: #cf2c10;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+  
+}
+
+/*FIN ESTILO BOTONES
+------------------------------------------------------------------------*/
+
+/*ESTILO PARA LOS TEXTFIELD
+---------------------------------------------------------*/
+
+.textField
+{
+    -fx-background-color:     #cdcdcd;
+    -fx-font-size: 16px;
+   
+}
+/*FIN ESTILO PARA LOS TEXTFIELD
+---------------------------------------------------------*/
+/*ESTILO PARA LOS TITULOS
+---------------------------------------------------------*/
+
+/*
+ FIN ESTILO PARA LOS TITULOS
+---------------------------------------------------------
+*/
+
+
+.fondoNegro{
+    -fx-background-color:  black;
+}
+
