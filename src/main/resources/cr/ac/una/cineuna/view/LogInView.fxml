@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="640.0" prefWidth="911.0" styleClass="fondoNegro" stylesheets="@Style01.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.LogInViewController">
+   <children>
+      <ImageView fx:id="imvFondo" fitHeight="648.0" fitWidth="920.0" layoutX="-3.0" layoutY="-6.0" opacity="0.37">
+         <image>
+            <Image url="@../resources/Principal.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="252.0" layoutY="24.0" prefHeight="594.0" prefWidth="467.0" spacing="12.0" styleClass="fondoNegro" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="252.0" AnchorPane.rightAnchor="198.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <Text fx:id="lblTitulo" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo1" text="Iniciar sesión" textAlignment="CENTER" wrappingWidth="327.30426025390625">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <JFXCheckBox fx:id="chkAdministrador" checkedColor="RED" text="Administrador" textFill="WHITE" unCheckedColor="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXCheckBox>
+            <JFXTextField fx:id="txtUsuario" focusColor="BLACK" prefWidth="335.0" promptText="  Usuario" styleClass="textField" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtContrasena" focusColor="BLACK" prefWidth="335.0" promptText="  Contraseña" styleClass="textField" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="BtnIniciarSesion" alignment="CENTER" onAction="#OnActionBtnIniciarSesion" prefWidth="335.0" text="Iniciar sesión" textFill="WHITE">
+               <font>
+                  <Font name="System " size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Text fx:id="lblOlvidoContrasenna" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Olvidó su contraseña?" textAlignment="CENTER" wrappingWidth="313.7042236328125">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </Text>
+            <JFXButton fx:id="btnRecuperarContrasenna" alignment="CENTER" onAction="#OnActionBtnRecuperarContrasenna" prefWidth="335.0" text="Recuperar contraseña" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Text fx:id="lblNuevoEnLaAplicacion" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Nuevo en la aplicación?" textAlignment="CENTER" wrappingWidth="313.7042236328125">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </Text>
+            <JFXButton fx:id="btnCrearCuenta" alignment="CENTER" onAction="#OnActionBtnCrearCuenta" prefWidth="335.0" text="Crear cuenta" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Text fx:id="lblIdioma" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma" textAlignment="CENTER" wrappingWidth="313.7042236328125">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER" spacing="30.0">
+               <children>
+                  <JFXCheckBox fx:id="chkEspannol" checkedColor="RED" onAction="#chkEspannol" selected="true" text="Español" textFill="WHITE" unCheckedColor="RED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="chkIngles" checkedColor="RED" onAction="#chkIngles" text="Inglés" textFill="WHITE" unCheckedColor="RED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXCheckBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
