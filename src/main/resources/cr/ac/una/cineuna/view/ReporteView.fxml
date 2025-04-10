@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fondoNegro" stylesheets="@Style01.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.ReporteViewController">
+   <children>
+      <HBox layoutY="14.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="323.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="lblFechaInicio" prefHeight="30.0" prefWidth="90.0" styleClass="textField" text="Fecha inicio" />
+                        <JFXDatePicker fx:id="dtpFechaInicio" defaultColor="WHITE" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: RED;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="323.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="lblFechaFin" prefHeight="30.0" prefWidth="90.0" styleClass="textField" text="Fecha fin" />
+                        <JFXDatePicker fx:id="dtpFechaFin" defaultColor="WHITE" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: RED;" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnReportePorFecha" onAction="#OnActionBtnReportePorFecha" prefHeight="37.0" prefWidth="250.0" styleClass="buttonRojo" text="Generar reporte" textFill="WHITE" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="182.0" spacing="20.0">
+                     <children>
+                        <JFXTextField fx:id="txtNombrePeliculaEspanol" editable="false" prefHeight="37.0" prefWidth="176.0" promptText="Nombre Pelicula Español" styleClass="textField" />
+                        <JFXTextField fx:id="txtNombrePeliculaIngles" editable="false" prefHeight="25.0" prefWidth="0.0" promptText="Nombre Pelicula Ingles" styleClass="textField" />
+                        <JFXButton fx:id="btnBuscarPelicula" onAction="#OnActionBtnReporteBuscarPelicula" styleClass="buttonRojo" text="Buscar Pelicula" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="btnReportePorPeicula" onAction="#OnActionBtnReportePorPelicula" prefHeight="38.0" prefWidth="220.0" styleClass="buttonRojo" text="Generar reporte" textFill="WHITE" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
