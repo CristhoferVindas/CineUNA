@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="791.0" styleClass="fondoNegro" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.RegistroPeliculaViewController">
+    <stylesheets>
+        <URL value="@Style01.css" />
+    </stylesheets>
+   <children>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="32.0" prefHeight="57.0" prefWidth="731.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" prefHeight="46.0" prefWidth="498.0" text="Registro pelicula" textAlignment="CENTER" textFill="#cf2c10">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="12.0" layoutY="64.0" prefHeight="540.0" prefWidth="575.0" spacing="5.0">
+         <children>
+            <JFXTextField fx:id="txtId" focusColor="BLACK" promptText="Id" styleClass="textField" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtNombreEspannol" focusColor="BLACK" promptText="Nombre en español" styleClass="textField" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtNombreIngles" focusColor="BLACK" prefHeight="37.0" prefWidth="210.0" promptText="Nombre en Inglés" styleClass="textField" unFocusColor="BLACK" />
+            <HBox alignment="CENTER" prefHeight="18.0" prefWidth="426.0" spacing="10.0">
+               <children>
+                  <JFXCheckBox fx:id="chkEspannol" checkedColor="#ff4e4e" onAction="#seleccionEspannol" selected="true" text="Español" textFill="WHITE" unCheckedColor="#d72222">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="chkIngles" checkedColor="#ff4e4e" onAction="#seleccionIngles" text="Inglés" textFill="WHITE" unCheckedColor="#d72222">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="chkAmbos" checkedColor="#ff4e4e" onAction="#seleccionAmbos" text="Ambos" textFill="WHITE" unCheckedColor="#d72222">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXCheckBox>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="txtTrailerEspannol" focusColor="BLACK" promptText="Trailer en español" styleClass="textField" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtTrailerIngles" focusColor="BLACK" promptText="Trailer en inglés" styleClass="textField" unFocusColor="BLACK" />
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Text fx:id="txtPortadaEspannolRegistroPelicula" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Portada español">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="imgPortadaEspannol" fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imgPortadaIngles" fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                  <Text fx:id="txtPortadaInglesRegistroPelicula" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Portada inglés">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <JFXDatePicker fx:id="dpFechaEstreno" defaultColor="BLACK" prefHeight="38.0" prefWidth="720.0" promptText="Fecha de estreno" style="-fx-background-color: #cdcdcd;" />
+            <JFXDatePicker fx:id="dtpFechaFin" defaultColor="BLACK" prefHeight="38.0" prefWidth="642.0" promptText="Fecha de Fin" style="-fx-background-color: #cdcdcd;" />
+            <HBox alignment="CENTER" prefHeight="15.0" prefWidth="426.0" spacing="10.0">
+               <children>
+                  <JFXCheckBox fx:id="chkDisponiblePronto" checkedColor="#ff4e4e" onAction="#seleccionDisponiblePronto" selected="true" text="Disponible pronto" textFill="WHITE" unCheckedColor="#d72222">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="chkEnCartelera" checkedColor="#ff4e4e" onAction="#seleccionEnCartelera" text="En cartelera" textFill="WHITE" unCheckedColor="#d72222">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="chkInactiva" checkedColor="#ff4e4e" onAction="#seleccionInactiva" text="Inactiva" textFill="WHITE" unCheckedColor="#d72222">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXCheckBox>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="txtResennaEspannol" focusColor="BLACK" promptText="Reseña en español" styleClass="textField" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtResennaIngles" focusColor="BLACK" promptText="Reseña en inglés" styleClass="textField" unFocusColor="BLACK" />
+         </children>
+      </VBox>
+      <VBox layoutX="593.0" layoutY="230.0" prefHeight="179.0" prefWidth="198.0" spacing="4.0">
+         <children>
+            <JFXButton fx:id="btnBuscarTrailerEspanol" onAction="#OnActionBtnBuscarTrailerEspannol" prefHeight="38.0" prefWidth="157.0" text="Buscar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Buscar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBuscarTrailerIngles" onAction="#OnActionBtnBuscarTrailerIngles" prefHeight="38.0" prefWidth="158.0" text="Buscar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Buscar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBuscarPortadaEspanol" onAction="#OnActionBtnBuscarPortadaEspannol" prefHeight="38.0" prefWidth="188.0" text="Portada español" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Buscar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBuscarPortadaIngles" onAction="#OnActionBtnBuscarPortadaIngles" prefHeight="38.0" prefWidth="188.0" text="Portada inglés" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Buscar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="22.0" layoutY="587.0" prefHeight="66.0" prefWidth="620.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnNuevo" buttonType="RAISED" onAction="#OnActionBtnNuevo" prefHeight="37.0" prefWidth="130.0" text="Nuevo" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Nuevo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBuscar" buttonType="RAISED" onAction="#OnActionBtnBuscar" prefHeight="21.0" prefWidth="130.0" text="Buscar" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Buscar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEliminar" buttonType="RAISED" onAction="#OnActionBtnEliminar" prefHeight="22.0" prefWidth="130.0" text="Eliminar" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnGuardar" buttonType="RAISED" onAction="#OnActionBtnGuardar" prefHeight="26.0" prefWidth="130.0" text="Guardar" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../resources/Guardar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
