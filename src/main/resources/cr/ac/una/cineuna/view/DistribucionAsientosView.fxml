@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="860.0" styleClass="fondoNegro" stylesheets="@Style01.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.DistribucionAsientosViewController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fx:id="sclEspacioAsientos" pannable="true" prefHeight="348.0" prefWidth="434.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <JFXButton fx:id="btnAgregarColumna" onAction="#OnActionBtnAgregarColumna" text=" " BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Añadir_CeldaColumna.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </right>
+   <bottom>
+      <JFXButton fx:id="btnAgregarFila" onAction="#OnActionBtnAgregarFila" text=" " BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Añadir_CeldaColumna.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </bottom>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <left>
+      <VBox alignment="CENTER" prefHeight="303.0" prefWidth="96.0" spacing="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgAsiento" fitHeight="76.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS" />
+            <JFXButton fx:id="btnGuardar" onAction="#OnActionBtnGuardar" styleClass="buttonRojo" stylesheets="@Style01.css" text="Guardar" textFill="WHITE" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <ImageView fitHeight="117.0" fitWidth="291.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../resources/PantallaCine.jpg" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>
