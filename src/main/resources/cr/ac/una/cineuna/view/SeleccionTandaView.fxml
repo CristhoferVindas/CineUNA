@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@Style01.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.SeleccionTandaViewController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="20.0" layoutY="20.0" style="-fx-padding: 0 0 0 0;" styleClass="jfx-contenedor-principal" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="2000.0" styleClass="fondoNegro" text="Búsqueda" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tbvTandas" onMousePressed="#OnMousePressedTbvResultados" style="-fx-background-color: #cdcdcd;" VBox.vgrow="ALWAYS">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy></TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
