@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fondoNegro" stylesheets="@Style01.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.RestablecerContrasennaViewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="4.0" layoutY="85.0" prefHeight="242.0" prefWidth="340.0" spacing="10.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0">
+         <children>
+            <JFXTextField fx:id="txtUsuario" focusColor="BLACK" prefHeight="38.0" prefWidth="436.0" promptText=" Usuario" styleClass="textField" unFocusColor="BLACK" />
+            <JFXPasswordField fx:id="txtNuevaContrasenna" focusColor="BLACK" promptText=" Nueva contraseña" styleClass="textField" unFocusColor="BLACK" />
+            <JFXPasswordField fx:id="txtConfirmarContrasenna" focusColor="BLACK" promptText=" Confirmar contraseña" styleClass="textField" unFocusColor="BLACK" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="437.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnAceptar" onAction="#OnActionBtnAceptar" prefHeight="38.0" prefWidth="115.0" text="Aceptar" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnCancelar" onAction="#OnActionBtnCancelar" prefHeight="38.0" prefWidth="115.0" text="Cancelar" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="buttonRojo" />
+                  <String fx:value="EstiloRojo" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="lblTitulo" fill="#cf2c10" strokeType="OUTSIDE" strokeWidth="0.0" text="Restablecer contraseña" textAlignment="CENTER" wrappingWidth="430.10699462890625">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
