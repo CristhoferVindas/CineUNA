@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="959.0" styleClass="fondoNegro" stylesheets="@Style01.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.cineuna.controller.SeleccionAsientoViewController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fx:id="sclEspacioAsientos" pannable="true" prefHeight="348.0" prefWidth="434.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="43.0" prefWidth="590.0" spacing="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnAgregarFactura" onAction="#OnActionBtnAgregarFactura" styleClass="buttonRojo" stylesheets="@Style01.css" text="Agregar a la Factura" textFill="WHITE" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <ImageView fitHeight="145.0" fitWidth="315.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../resources/PantallaCine.jpg" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>
