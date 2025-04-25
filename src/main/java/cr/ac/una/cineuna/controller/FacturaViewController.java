@@ -148,7 +148,7 @@ public class FacturaViewController extends Controller implements Initializable {
             }
         }
         tbvEntradas.getItems().clear();
-        txtCantidad.setTextFormatter(Formato.getInstance().letrasFormat(100));
+        txtCantidad.setTextFormatter(Formato.getInstance().integerFormat());
         tandaDto = new TandaDto();
         tandaDto = (TandaDto) AppContext.getInstance().get("TandaActual");
         facturaDto = new FacturaDto();

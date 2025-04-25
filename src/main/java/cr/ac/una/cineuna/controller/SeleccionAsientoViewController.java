@@ -132,7 +132,7 @@ public class SeleccionAsientoViewController extends Controller implements Initia
         // asientoxtandaDtos.clear();
         InputStream inputStream = null;
         try {
-            inputStream = new FileInputStream("..\\CineUNA\\53836.jpg");
+            inputStream = new FileInputStream("..\\CineUNA\\420125.jpg");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(DistribucionAsientosViewController.class.getName()).log(Level.SEVERE, null, ex);
         }
